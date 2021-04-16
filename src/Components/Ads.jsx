@@ -83,7 +83,7 @@ class Ads extends React.Component {
                 <div className={s.itemInfo}>
                     <div className={s.itemRow1}>
                                     <span className={s.oldPrice}>
-                                        <span>{el.oldPrice}</span>
+                                        <span>{el.oldPrice} ₽</span>
                                     </span>
                         <span className={s.ImgBox}>
                                         <span className={s.deliveryImg}>
@@ -102,7 +102,7 @@ class Ads extends React.Component {
                                         </span>
                                     </span>
                     </div>
-                    <div className={s.itemRow2}>{el.price}</div>
+                    <div className={s.itemRow2}>{el.price} ₽</div>
                     <div className={s.itemRow3}>{el.title}</div>
                     <div className={s.itemRow4}><span className={s.city}>{el.locality}</span><span
                         className={s.date}>
@@ -164,7 +164,7 @@ class Ads extends React.Component {
                 <div className={s.itemInfo}>
                     <div className={s.itemRow1}>
                                     <span className={s.oldPrice}>
-                                        <span>{el.oldPrice}</span>
+                                        <span>{el.oldPrice} ₽</span>
                                     </span>
                         <span className={s.ImgBox}>
                                         <span className={s.deliveryImg}>
@@ -183,7 +183,7 @@ class Ads extends React.Component {
                                         </span>
                                     </span>
                     </div>
-                    <div className={s.itemRow2}>{el.price}</div>
+                    <div className={s.itemRow2}>{el.price} ₽</div>
                     <div className={s.itemRow3}>{el.title}</div>
                     <div className={s.itemRow4}><span className={s.city}>{el.locality}</span><span
                         className={s.date}>
@@ -254,7 +254,7 @@ class Ads extends React.Component {
                         <div className={s.itemInfo}>
                             <div className={s.itemRow1}>
                                     <span className={s.oldPrice}>
-                                        <span>{el.oldPrice}</span>
+                                        <span>{el.oldPrice} ₽</span>
                                     </span>
                                 <span className={s.ImgBox}>
                                         <span className={s.deliveryImg}>
@@ -273,7 +273,7 @@ class Ads extends React.Component {
                                         </span>
                                     </span>
                             </div>
-                            <div className={s.itemRow2}>{el.price}</div>
+                            <div className={s.itemRow2}>{el.price} ₽</div>
                             <div className={s.itemRow3}>{el.title}</div>
                             <div className={s.itemRow4}><span className={s.city}>{el.locality}</span><span
                                 className={s.date}>
@@ -335,7 +335,7 @@ class Ads extends React.Component {
                         <div className={s.itemInfo}>
                             <div className={s.itemRow1}>
                                     <span className={s.oldPrice}>
-                                        <span>{el.oldPrice}</span>
+                                        <span>{el.oldPrice} ₽</span>
                                     </span>
                                 <span className={s.ImgBox}>
                                         <span className={s.deliveryImg}>
@@ -354,7 +354,7 @@ class Ads extends React.Component {
                                         </span>
                                     </span>
                             </div>
-                            <div className={s.itemRow2}>{el.price}</div>
+                            <div className={s.itemRow2}>{el.price} ₽</div>
                             <div className={s.itemRow3}>{el.title}</div>
                             <div className={s.itemRow4}><span className={s.city}>{el.locality}</span><span
                                 className={s.date}>
