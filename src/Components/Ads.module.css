@@ -1,0 +1,232 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+.AdsPage{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+}
+.item{
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 100px;
+}
+.itemImgBox{
+    position: relative;
+    background: lightgray;
+    border-radius: 10px 10px 0px 0px;
+}
+.itemImgBox .itemImg{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 100%;
+    object-fit: cover;
+}
+.compareImg{
+    position: absolute;
+    top: 65%;
+    left: 83%;
+}
+.likeImg{
+    top: 80%;
+    left: 83%;
+    position: absolute;
+}
+.itemInfo{
+    padding: 2px 10px 15px 10px;
+    background: white;
+    display: grid;
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "oldPriceAndDopOption oldPriceAndDopOption"
+
+                            "Price ."
+
+                            "Name Name"
+
+                            "CityAndData CityAndData"
+                            ;
+}
+.itemRow1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Oldprice imgBox";
+    grid-area: oldPriceAndDopOption;
+    font-size: 14px;
+    color: #5A5A5A;
+    text-align: left;
+}
+.oldPrice span{
+    position: relative;
+    grid-area: Oldprice;
+}
+.oldPrice span::before{
+    content: "";
+    width: 120%;
+    top: 55%;
+    left: -3px;
+    height: 1px;
+    background: #5A5A5A;
+    position: absolute;
+}
+.ImgBox{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-area: imgBox;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". deliveryImg dealImg";
+}
+.dealImg{
+    margin: 0 0 0 auto;
+    grid-area: dealImg;
+}
+/*.dealImg:hover img{*/
+/*    color: green;*/
+/*    background: green;*/
+/*}*/
+.deliveryImg{
+    margin: 0 0 0 auto;
+    grid-area: deliveryImg;
+}
+.itemRow2{
+    grid-area: Price;
+    color: #2C2C2C;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
+}
+.itemRow3{
+    text-align: left;
+    color: #2C2C2C;
+    font-size: 14px;
+    grid-area: Name;
+    font-weight: 500;
+}
+.itemRow4{
+    color: #8F8F8F;
+    font-size: 10px;
+    grid-area: CityAndData;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "city date";
+
+}
+.city{
+    text-align: left;
+    grid-area: city;
+}
+.date{
+    text-align: right;
+    grid-area: date;
+}
+
+.showAllCardsBtn{
+    width: 100px;
+    display: none;
+}
+.showAllCardsBtn:checked ~ .showAllCardsLabel::after{
+    transform: rotate(135deg);
+}
+.showAllCardsBtn:checked ~ .showAllCardsLabel::before{
+    transform: rotate(45deg);
+}
+.showAllCardsLabel{
+    position: relative;
+    text-align: right;
+    color: #00A0AB;
+    margin: 0 60px 20px auto;
+}
+.showAllCardsLabel::after{
+    content: "";
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    background: #00A0AB;
+    top: 6px;
+    transform: rotate(-135deg);
+    left: 120%;
+}
+.showAllCardsLabel::before{
+    content: "";
+    width: 3px;
+    height: 10px;
+    position: absolute;
+    background: #00A0AB;
+    top: 6px;
+    left: 113%;
+    transform: rotate(-45deg);
+}
+
+.textItemHasBeenSeen{
+    padding: 1px 6px 3px 6px;
+    background:rgba(44, 44, 44, 0.74);
+    color: white;
+    left: 60px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    visibility: hidden;
+}
+.item.itemSeen{
+
+}
+.item.itemSeen .itemInfo{
+    background: #FFF6A5;
+}
+.item.itemSeen .textItemHasBeenSeen{
+    visibility: visible;
+}
+.swapImgLabel{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background: #C4C4C4;
+    border: 1px solid #5A5A5A;
+}
+.swapImgLabel.firstImg{
+    background: #00A0AB;
+}
+.swapImg{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    display: inline-block;
+}
+.swapImg input:checked ~ label{
+    background: #00A0AB;
+}
+.swapImg input{
+    display: none;
+}
+.swapImg.firstImg{
+    left: 60px;
+    top: 95%;
+}
+.swapImg.second{
+    left: 80px;
+    top: 95%;
+}
+.swapImg.third{
+    left: 100px;
+    top: 95%;
+}
+.swapImg.four{
+    left: 120px;
+    top: 95%;
+}
