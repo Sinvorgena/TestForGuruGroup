@@ -146,27 +146,30 @@ a{
 .showAllCardsLabel{
     position: relative;
     text-align: right;
+    font-weight: 500;
     color: #00A0AB;
     margin: 0 60px 20px auto;
 }
 .showAllCardsLabel::after{
     content: "";
     width: 3px;
-    height: 10px;
+    height: 15px;
     position: absolute;
     background: #00A0AB;
     top: 6px;
+    border-radius: 5px;
     transform: rotate(-135deg);
     left: 120%;
 }
 .showAllCardsLabel::before{
     content: "";
     width: 3px;
-    height: 10px;
+    height: 15px;
+    border-radius: 5px;
     position: absolute;
     background: #00A0AB;
     top: 6px;
-    left: 113%;
+    left: 111%;
     transform: rotate(-45deg);
 }
 
@@ -215,7 +218,7 @@ a{
     display: none;
 }
 .swapImg.firstImg{
-    left: 60px;
+    left: 65px;
     top: 95%;
 }
 .swapImg.second{
@@ -223,10 +226,10 @@ a{
     top: 95%;
 }
 .swapImg.third{
-    left: 100px;
+    left: 95px;
     top: 95%;
 }
 .swapImg.four{
-    left: 120px;
+    left: 110px;
     top: 95%;
 }
