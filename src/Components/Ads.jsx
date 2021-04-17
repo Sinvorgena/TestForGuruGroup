@@ -19,6 +19,7 @@ class Ads extends React.Component {
         this.props.getCards()
         setTimeout(() => {
             if (!this.props.imgUrlData.length) {
+                debugger
                 console.log("Делаю запрос")
                 this.props.getImgForCards(this.props.cardsData.length)
             }
@@ -27,10 +28,6 @@ class Ads extends React.Component {
 
     state = {
         currentImg: this.props.currentImg,
-        currentImgForMassive: this.props.cardsData.forEach(el => {
-            let res
-            res += el.currentImg
-        }),
         limitationСardsField: this.props.cardsData.slice(0, 16).map(el =>
             <div className={!el.seen ? `${s.item}` : `${s.item} ${s.itemSeen}`}>
                 <div className={s.itemImgBox}>
@@ -41,11 +38,11 @@ class Ads extends React.Component {
                             this.props.setCurrentImgSucsess(`${el.id+0}`)
                             el.currentImg = 0
                         }} name={"switchImg"} id={el.id + 0}/>
-                        <label className={el.currentImg ==0? `${s.swapImgLabel} ${s.firstImg}`:`${s.swapImgLabel}`} htmlFor={el.id + 0}></label>
+                        <label className={el.currentImg ==0? `${s.swapImgLabel} ${s.firstImg}`:`${s.swapImgLabel}`}
+                               htmlFor={el.id + 0}></label>
                     </span>
                     <span className={`${s.swapImg} ${s.second}`}>
                         <input type="radio" onClick={() => {
-                            console.log(`${el.id}`)
                             this.props.setCurrentImgSucsess(`${el.id+1}`)
                             el.currentImg = 1
                         }} name={"switchImg"} id={el.id + 1}/>
@@ -53,7 +50,6 @@ class Ads extends React.Component {
                     </span>
                     <span className={`${s.swapImg} ${s.third}`}>
                         <input type="radio" onClick={() => {
-                            console.log(`${el.id}`)
                             this.props.setCurrentImgSucsess(`${el.id+2}`)
                             el.currentImg = 2
                         }} name={"switchImg"} id={el.id + 2}/>
@@ -61,13 +57,11 @@ class Ads extends React.Component {
                     </span>
                     <span className={`${s.swapImg} ${s.four}`}>
                         <input type="radio" onClick={() => {
-                            console.log(`${el.id}`)
                             this.props.setCurrentImgSucsess(`${el.id+3}`)
                             el.currentImg = 3
                         }} name={"switchImg"} id={el.id + 3}/>
                         <label className={`${s.swapImgLabel} ${s.four}`} htmlFor={el.id + 3}></label>
                     </span>
-
                     <img src={`${el.img[el.currentImg]}`} ref={this.itemImg} className={s.itemImg} alt=""/>
                     <img src={compareImg} onMouseOver={(e) => {
                         e.currentTarget.src = `${compareImgHover}`
@@ -85,7 +79,7 @@ class Ads extends React.Component {
                                     <span className={s.oldPrice}>
                                         <span>{el.oldPrice} ₽</span>
                                     </span>
-                        <span className={s.ImgBox}>
+                                    <span className={s.ImgBox}>
                                         <span className={s.deliveryImg}>
                                             <img className={s.deliveryImg} onMouseOver={(e) => {
                                                 e.currentTarget.src = `${deliveryImgHover}`

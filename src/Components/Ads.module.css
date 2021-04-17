@@ -50,7 +50,7 @@ a{
     border-radius: 0 0 10px 10px;
     font-size: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 20px auto auto auto;
     grid-template-areas: "oldPriceAndDopOption oldPriceAndDopOption"
 
                             "Price ."
@@ -73,6 +73,10 @@ a{
     position: relative;
     grid-area: Oldprice;
 }
+.oldPrice{
+
+}
+
 .oldPrice span::before{
     content: "";
     width: 120%;
@@ -111,7 +115,7 @@ a{
 .itemRow3{
     text-align: left;
     color: #2C2C2C;
-    font-size: 14px;
+    font-size: 13px;
     grid-area: Name;
     font-weight: 500;
 }
