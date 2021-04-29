@@ -17,7 +17,7 @@ a{
     width: 200px;
     border-radius: 10px;
     margin: 0 auto;
-    height: 350px;
+    height: 370px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 250px 100px;
@@ -108,7 +108,7 @@ a{
 .itemRow2{
     grid-area: Price;
     color: #2C2C2C;
-    font-size: 22px;
+    font-size: 20px;
     text-align: left;
     font-weight: 700;
 }
@@ -120,6 +120,7 @@ a{
     font-weight: 500;
 }
 .itemRow4{
+    margin: 5px 0 0 0;
     color: #8F8F8F;
     font-size: 10px;
     grid-area: CityAndData;

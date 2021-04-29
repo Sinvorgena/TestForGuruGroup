@@ -35,7 +35,6 @@ export const AdsReducer = (state = AdsDefaulState, action) => {
             }
             action.imgUrlData = action.imgUrlData.slice(0, (copyState.cardsData.length * 4))
             copyState.imgUrlData = action.imgUrlData
-            console.log(action.imgUrlData)
             for (let i = 0; i < copyState.cardsData.length; i++) {
                 if(i == 0){
                     copyState.cardsData[i].img = action.imgUrlData.slice(0,4).map((el)=>el.urls.small)
@@ -70,7 +69,6 @@ export let getCards = () => {
         Api.Cards.getCards()
             .then(response => {
                     dispatch(setCardsData(response.data))
-                    console.log(response)
                 }
             )
 
@@ -80,11 +78,9 @@ export let getCards = () => {
 export let getImgForCards = (count) => {
     return (dispatch) => {
         let imgUrlData = new Array()
-        for (let i = 0; i < (Math.ceil(93 / 30) * 4); i++) {
+        for (let i = 0; i < (Math.ceil((count*4) / 30)); i++) {
             Api.Cards.getImg(i + 1).then(response => {
-                console.log(response)
                 imgUrlData = [...imgUrlData, ...response.data.results]
-                console.log(imgUrlData)
                 if (imgUrlData.length >= count * 4) {
                     dispatch(setImgForCardsSucsess(imgUrlData))
                 }
