@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/TestForGuruGroup/static/css/main.345e1c52.chunk.css",
-    "main.js": "/TestForGuruGroup/static/js/main.e9a47670.chunk.js",
-    "main.js.map": "/TestForGuruGroup/static/js/main.e9a47670.chunk.js.map",
-    "runtime-main.js": "/TestForGuruGroup/static/js/runtime-main.3654813f.js",
-    "runtime-main.js.map": "/TestForGuruGroup/static/js/runtime-main.3654813f.js.map",
-    "static/js/2.c076f5b5.chunk.js": "/TestForGuruGroup/static/js/2.c076f5b5.chunk.js",
-    "static/js/2.c076f5b5.chunk.js.map": "/TestForGuruGroup/static/js/2.c076f5b5.chunk.js.map",
-    "static/js/3.8c64ad21.chunk.js": "/TestForGuruGroup/static/js/3.8c64ad21.chunk.js",
-    "static/js/3.8c64ad21.chunk.js.map": "/TestForGuruGroup/static/js/3.8c64ad21.chunk.js.map",
+    "main.js": "/TestForGuruGroup/static/js/main.9063db1b.chunk.js",
+    "main.js.map": "/TestForGuruGroup/static/js/main.9063db1b.chunk.js.map",
+    "runtime-main.js": "/TestForGuruGroup/static/js/runtime-main.5c650d47.js",
+    "runtime-main.js.map": "/TestForGuruGroup/static/js/runtime-main.5c650d47.js.map",
+    "static/js/2.332344c9.chunk.js": "/TestForGuruGroup/static/js/2.332344c9.chunk.js",
+    "static/js/2.332344c9.chunk.js.map": "/TestForGuruGroup/static/js/2.332344c9.chunk.js.map",
+    "static/js/3.39347390.chunk.js": "/TestForGuruGroup/static/js/3.39347390.chunk.js",
+    "static/js/3.39347390.chunk.js.map": "/TestForGuruGroup/static/js/3.39347390.chunk.js.map",
     "index.html": "/TestForGuruGroup/index.html",
     "static/css/main.345e1c52.chunk.css.map": "/TestForGuruGroup/static/css/main.345e1c52.chunk.css.map",
-    "static/js/2.c076f5b5.chunk.js.LICENSE.txt": "/TestForGuruGroup/static/js/2.c076f5b5.chunk.js.LICENSE.txt",
+    "static/js/2.332344c9.chunk.js.LICENSE.txt": "/TestForGuruGroup/static/js/2.332344c9.chunk.js.LICENSE.txt",
     "static/media/like.266fafe3.svg": "/TestForGuruGroup/static/media/like.266fafe3.svg",
     "static/media/likeHover.590e747f.svg": "/TestForGuruGroup/static/media/likeHover.590e747f.svg",
     "static/media/sravnit.ff24f33e.svg": "/TestForGuruGroup/static/media/sravnit.ff24f33e.svg",
@@ -22,9 +22,9 @@
     "static/media/znachoksdelkihover.8d1bc3bf.svg": "/TestForGuruGroup/static/media/znachoksdelkihover.8d1bc3bf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3654813f.js",
-    "static/js/2.c076f5b5.chunk.js",
+    "static/js/runtime-main.5c650d47.js",
+    "static/js/2.332344c9.chunk.js",
     "static/css/main.345e1c52.chunk.css",
-    "static/js/main.e9a47670.chunk.js"
+    "static/js/main.9063db1b.chunk.js"
   ]
 }
