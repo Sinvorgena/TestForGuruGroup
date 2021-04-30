@@ -1,5 +1,5 @@
 import * as axios from "axios";
-import React, {useState} from "react";
+import React from "react";
 
 const instanse = axios.create({
     baseURL: "https://6075786f0baf7c0017fa64ce.mockapi.io/products"
